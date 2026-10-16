@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unlocking Your Pharmacy Group’s MedsCheck Potential | Pharmacy Systems 4 Success</title>
+  <style>
+    :root {
+      --navy-950: #06152d;
+      --navy-900: #0a2246;
+      --navy-800: #103468;
+      --royal-700: #184e98;
+      --royal-600: #1e62bc;
+      --blue-500: #2b7de0;
+      --blue-400: #559bf0;
+      --blue-200: #bfd9fa;
+      --blue-100: #e3effd;
+      --blue-50: #f3f8fe;
+      --slate-700: #334e68;
+      --slate-600: #486581;
+      --slate-500: #627d98;
+      --border-blue: #c8dcf4;
+      --white: #ffffff;
+      --shadow-sm: 0 2px 8px rgba(6, 21, 45, 0.07);
+      --shadow-md: 0 6px 20px rgba(10, 34, 70, 0.11);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #eaf3fc 0%, #f4f8fd 100%);
+      color: var(--navy-950);
+      line-height: 1.5;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--navy-950) 0%, var(--navy-800) 55%, var(--royal-600) 100%);
+      color: var(--white);
+      padding: 28px 24px;
+      border-bottom: 4px solid var(--blue-400);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .brand-logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-logo {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--blue-200);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      background-color: var(--navy-900);
+    }
+
+    .header-copy .private-tag {
+      display: inline-block;
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(191, 217, 250, 0.35);
+      color: var(--blue-100);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .header-copy h1 {
+      margin: 0 0 6px 0;
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .header-copy .subheading {
+      margin: 0 0 12px 0;
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--blue-200);
+    }
+
+    .header-copy .value-prop {
+      margin: 0 0 12px 0;
+      font-size: 15.5px;
+      color: rgba(255, 255, 255, 0.92);
+      max-width: 680px;
+    }
+
+    .header-copy .byline {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--blue-200);
+    }
+
+    .portrait-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .portrait-img {
+      width: 118px;
+      height: 138px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 14px;
+      border: 3px solid rgba(191, 217, 250, 0.65);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+      background-color: var(--royal-700);
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1120px;
+      margin: 26px auto 40px;
+      padding: 0 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-blue);
+    }
+
+    .card h2 {
+      margin: 0 0 14px 0;
+      font-size: 20px;
+      color: var(--navy-900);
+      border-bottom: 2px solid var(--blue-100);
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card h3 {
+      margin: 18px 0 10px 0;
+      font-size: 16px;
+      color: var(--navy-800);
+    }
+
+    /* Info Strip / How to use */
+    .how-to-use {
+      background: linear-gradient(90deg, var(--blue-50) 0%, #e6f1fe 100%);
+      border-left: 5px solid var(--royal-600);
+      padding: 16px 20px;
+    }
+
+    .how-to-use h2 {
+      border-bottom: none;
+      padding-bottom: 4px;
+      margin-bottom: 6px;
+      font-size: 17px;
+      color: var(--navy-900);
+    }
+
+    .how-to-use p {
+      margin: 0;
+      font-size: 14.5px;
+      color: var(--slate-700);
+    }
+
+    /* Inputs */
+    .input-group {
+      margin-bottom: 14px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--navy-900);
+      margin-bottom: 5px;
+    }
+
+    .input-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    input[type="number"],
+    input[type="month"],
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 15.5px;
+      color: var(--navy-950);
+      background: var(--blue-50);
+      border: 1px solid #9ec2ec;
+      border-radius: 8px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    input[type="number"]:focus,
+    input[type="month"]:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--royal-600);
+      box-shadow: 0 0 0 3px rgba(30, 98, 188, 0.18);
+      background: var(--white);
+    }
+
+    .hint {
+      display: block;
+      font-size: 12.5px;
+      color: var(--slate-600);
+      margin-top: 4px;
+    }
+
+    .btn-reset {
+      margin-top: 8px;
+      width: 100%;
+      padding: 11px 16px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--navy-900);
+      background: var(--blue-100);
+      border: 1px solid #9ec2ec;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+    }
+
+    .btn-reset:hover {
+      background: var(--blue-200);
+    }
+
+    .btn-reset:active {
+      transform: translateY(1px);
+    }
+
+    /* Hero Metric Boxes */
+    .hero-box {
+      background: linear-gradient(135deg, var(--navy-950) 0%, var(--navy-800) 60%, var(--royal-700) 100%);
+      color: var(--white);
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-box .lbl {
+      font-size: 14px;
+      color: var(--blue-200);
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .hero-box .val {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--white);
+      margin: 6px 0;
+      line-height: 1.15;
+    }
+
+    .hero-box .sub {
+      font-size: 14px;
+      color: var(--blue-100);
+      margin-top: 4px;
+      line-height: 1.4;
+      opacity: 0.95;
+    }
+
+    /* Directly Underneath Unlock Box */
+    .unlock-summary-box {
+      background: linear-gradient(90deg, var(--blue-50) 0%, #e6f1fe 100%);
+      border: 1px solid var(--border-blue);
+      border-left: 5px solid var(--royal-600);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 18px;
+      color: var(--navy-950);
+    }
+
+    .unlock-summary-box .unlock-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--navy-900);
+      margin-bottom: 6px;
+    }
+
+    .unlock-summary-box .unlock-line {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--navy-800);
+      margin: 3px 0;
+    }
+
+    .unlock-summary-box .unlock-total {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--royal-700);
+      margin-top: 6px;
+      padding-top: 6px;
+      border-top: 1px solid var(--border-blue);
+    }
+
+    /* Data Rows */
+    .metric-list {
+      margin: 12px 0;
+    }
+
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--blue-100);
+      font-size: 14.5px;
+    }
+
+    .metric-row:last-child {
+      border-bottom: none;
+    }
+
+    .metric-row .m-label {
+      color: var(--slate-700);
+    }
+
+    .metric-row .m-val {
+      font-weight: 700;
+      color: var(--navy-900);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .metric-row.highlight-row {
+      background: var(--blue-50);
+      padding: 10px 10px;
+      border-radius: 8px;
+      border-bottom: none;
+      margin-top: 4px;
+    }
+
+    .metric-row.highlight-row .m-label {
+      color: var(--navy-900);
+      font-weight: 600;
+    }
+
+    .metric-row.highlight-row .m-val {
+      color: var(--royal-700);
+      font-size: 16px;
+    }
+
+    .plain-explanation {
+      background: var(--blue-50);
+      border: 1px solid var(--border-blue);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 13px;
+      color: var(--slate-700);
+      margin-top: 14px;
+    }
+
+    /* Next 12 Months Grid */
+    .forecast-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .forecast-col {
+      background: var(--blue-50);
+      border: 1px solid var(--border-blue);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .forecast-col h3 {
+      margin: 0 0 10px 0;
+      font-size: 15.5px;
+      color: var(--navy-900);
+      border-bottom: 1px solid var(--border-blue);
+      padding-bottom: 8px;
+    }
+
+    /* CSS Bar Chart */
+    .chart-container {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 2px solid var(--blue-100);
+    }
+
+    .chart-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy-900);
+      margin: 0 0 14px 0;
+    }
+
+    .bar-group {
+      margin-bottom: 14px;
+    }
+
+    .bar-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13.5px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: var(--navy-900);
+    }
+
+    .bar-track {
+      width: 100%;
+      height: 24px;
+      background: var(--blue-100);
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border-blue);
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 5px 0 0 5px;
+      transition: width 0.3s ease;
+    }
+
+    .bar-gross {
+      background: linear-gradient(90deg, var(--navy-800), var(--royal-600));
+    }
+
+    .bar-fee {
+      background: linear-gradient(90deg, var(--royal-600), var(--blue-400));
+    }
+
+    .bar-remaining {
+      background: linear-gradient(90deg, var(--navy-950), var(--royal-700));
+    }
+
+    /* How It Works Steps */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 14px 0;
+    }
+
+    .step-box {
+      background: var(--blue-50);
+      border: 1px solid var(--border-blue);
+      border-top: 4px solid var(--royal-600);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .step-num {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--royal-700);
+      background: var(--blue-100);
+      padding: 3px 9px;
+      border-radius: 99px;
+      margin-bottom: 8px;
+    }
+
+    .step-box p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--navy-950);
+    }
+
+    /* CTA Section */
+    .cta-card {
+      background: linear-gradient(135deg, var(--navy-950) 0%, var(--navy-800) 55%, var(--royal-600) 100%);
+      color: var(--white);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .cta-card h2 {
+      color: var(--white);
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 6px;
+      font-size: 22px;
+    }
+
+    .cta-card p {
+      margin: 0;
+      color: var(--blue-100);
+      font-size: 15.5px;
+      max-width: 640px;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      background: var(--white);
+      color: var(--navy-950);
+      font-weight: 700;
+      font-size: 15.5px;
+      text-decoration: none;
+      padding: 13px 24px;
+      border-radius: 9px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      border: 2px solid var(--blue-200);
+      transition: background 0.15s, transform 0.1s;
+      white-space: nowrap;
+    }
+
+    .btn-cta:hover {
+      background: var(--blue-100);
+    }
+
+    .cta-email-sub {
+      font-size: 12.5px;
+      color: var(--blue-200);
+    }
+
+    /* Table */
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--blue-100);
+      text-align: right;
+    }
+
+    th:first-child, td:first-child {
+      text-align: left;
+    }
+
+    th {
+      background: var(--blue-50);
+      color: var(--navy-900);
+      font-weight: 700;
+    }
+
+    .disclaimer-box {
+      background: var(--blue-50);
+      border-left: 4px solid var(--navy-800);
+      padding: 14px 16px;
+      font-size: 13px;
+      color: var(--slate-700);
+      line-height: 1.55;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--slate-600);
+      margin-top: 10px;
+    }
+
+    /* Responsive rules */
+    @media (max-width: 900px) {
+      .steps-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .forecast-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .header-inner {
+        grid-template-columns: auto 1fr;
+      }
+      .portrait-wrap {
+        display: none;
+      }
+      .header-copy h1 {
+        font-size: 23px;
+      }
+      .header-copy .subheading {
+        font-size: 16px;
+      }
+      main {
+        grid-template-columns: 1fr;
+      }
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+      .cta-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .cta-actions {
+        align-items: flex-start;
+        width: 100%;
+      }
+      .btn-cta {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header-inner {
+        grid-template-columns: 1fr;
+        text-align: left;
+      }
+      .brand-logo-wrap {
+        justify-content: flex-start;
+      }
+      .input-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand-logo-wrap">
+      <img src="Logo-Face-Only.jpg" alt="Pharmacy Systems 4 Success Logo" class="brand-logo">
+    </div>
+    <div class="header-copy">
+      <span class="private-tag">Private planning tool. Not endorsed by any pharmacy group or funding body.</span>
+      <h1>Unlocking Your Pharmacy Group’s MedsCheck Potential</h1>
+      <p class="subheading">with Pharmacy Systems 4 Success</p>
+      <p class="value-prop">Estimate historical unclaimed MedsCheck and Diabetes MedsCheck program capacity across your network, and model the next 12 months of potential gross program funding with structured pharmacist-reviewed preparation support.</p>
+      <p class="byline">Steve Flavel · Pharmacist &amp; Founder, Pharmacy Systems 4 Success</p>
+    </div>
+    <div class="portrait-wrap">
+      <img src="Steve-with-Blue-Backgroundjpg.jpg" alt="Steve Flavel" class="portrait-img">
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- How to use section -->
+  <section class="card how-to-use full-width">
+    <h2>How to use this calculator</h2>
+    <p>Enter your pharmacy group size, current monthly Standard and Diabetes MedsCheck volumes per store, and your realistic service mix and fill rate. All historical and 12-month forward calculations update immediately in your browser—no data is stored, tracked or transmitted.</p>
+  </section>
+
+  <!-- 2. Input Panel -->
+  <section class="card">
+    <h2>Your assumptions</h2>
+
+    <div class="input-group">
+      <label for="nPharmacies">Number of pharmacies</label>
+      <input id="nPharmacies" type="number" value="129" min="1" step="1">
+    </div>
+
+    <div class="input-row">
+      <div class="input-group">
+        <label for="curStd">Current Standard MedsChecks / pharmacy / month</label>
+        <input id="curStd" type="number" value="0" min="0" step="0.5">
+      </div>
+      <div class="input-group">
+        <label for="curDia">Current Diabetes MedsChecks / pharmacy / month</label>
+        <input id="curDia" type="number" value="5" min="0" step="0.5">
+      </div>
+    </div>
+    <span class="hint" style="margin-top:-8px; margin-bottom:12px;">Try 0 for pharmacies currently too busy to complete any services.</span>
+
+    <div class="input-group">
+      <label for="diaShare">Share of additional service opportunity that is Diabetes MedsChecks (%)</label>
+      <input id="diaShare" type="number" value="100" min="0" max="100" step="1">
+    </div>
+
+    <div class="input-group">
+      <label for="fillRate">Realistic fill rate for the next 12 months (%)</label>
+      <input id="fillRate" type="number" value="100" min="0" max="100" step="1">
+      <span class="hint">Patient numbers, eligibility and pharmacist time limit this.</span>
+    </div>
+
+    <div class="input-row">
+      <div class="input-group">
+        <label for="startMonth">Look-back start</label>
+        <input id="startMonth" type="month" value="2016-07" min="2016-07" max="2030-12">
+      </div>
+      <div class="input-group">
+        <label for="endMonth">Look-back end</label>
+        <input id="endMonth" type="month" value="2025-05" min="2016-07" max="2030-12">
+      </div>
+    </div>
+
+    <button type="button" id="resetBtn" class="btn-reset">Reset defaults</button>
+  </section>
+
+  <!-- 3. Historical Opportunity Panel -->
+  <section class="card">
+    <h2>Historical opportunity</h2>
+
+    <div class="hero-box">
+      <div class="lbl">Historical gross funding across all pharmacies</div>
+      <div class="val" id="histGroupGross">$0</div>
+      <div class="sub" id="histPeriodLabel">July 2016 to May 2025 (107 months)</div>
+    </div>
+
+    <div class="metric-list">
+      <div class="metric-row">
+        <span class="m-label">Historical unclaimed services per pharmacy</span>
+        <span class="m-val" id="histServicesPerPharm">0</span>
+      </div>
+      <div class="metric-row">
+        <span class="m-label">Historical unclaimed services across all pharmacies</span>
+        <span class="m-val" id="histServicesGroup">0</span>
+      </div>
+      <div class="metric-row highlight-row">
+        <span class="m-label">Historical gross funding per pharmacy</span>
+        <span class="m-val" id="histPharmGross">$0</span>
+      </div>
+      <div class="metric-row highlight-row">
+        <span class="m-label">Historical gross funding across all pharmacies</span>
+        <span class="m-val" id="histGroupGrossRow">$0</span>
+      </div>
+    </div>
+
+    <div class="plain-explanation">
+      <strong>Plain-language note:</strong> This look-back shows an illustrative historical funding opportunity based on unused monthly service caps over the selected period. Past unclaimed monthly caps have expired—this is not recoverable money or guaranteed claims.
+    </div>
+  </section>
+
+  <!-- 4. Next 12 Months Panel -->
+  <section class="card full-width">
+    <h2>Next 12 months forecast (<span id="forecastWindowLabel">Next 12 months</span>)</h2>
+
+    <!-- Exact Headline Result Card Wording -->
+    <div class="hero-box">
+      <div class="lbl">Potential additional gross funding<br>over the next 12 months</div>
+      <div class="val" id="fwdGroupGrossHero">$0</div>
+      <div class="sub">
+        Across <span id="fwdPharmacyCount">129</span> pharmacies<br>
+        Before pharmacy labour, overheads, tax<br>
+        and Pharmacy Systems 4 Success preparation fees
+      </div>
+    </div>
+
+    <!-- Exact Directly Underneath Wording -->
+    <div class="unlock-summary-box">
+      <div class="unlock-title">Your group could unlock:</div>
+      <div class="unlock-line"><span id="unlockPerPharmGross">$0</span> per pharmacy/year</div>
+      <div class="unlock-line">&minus; <span id="unlockPerPharmFee">$0</span> proposed preparation fee</div>
+      <div class="unlock-total">= <span id="unlockPerPharmRem">$0</span> remaining gross funding per pharmacy/year</div>
+    </div>
+
+    <div class="forecast-grid">
+      <div class="forecast-col">
+        <h3>Per pharmacy / year (next 12 months)</h3>
+        <div class="metric-row">
+          <span class="m-label">Additional services that could be delivered</span>
+          <span class="m-val" id="fwdPharmServices">0</span>
+        </div>
+        <div class="metric-row">
+          <span class="m-label">Potential gross program funding</span>
+          <span class="m-val" id="fwdPharmGross">$0</span>
+        </div>
+        <div class="metric-row">
+          <span class="m-label">Proposed Pharmacy Systems 4 Success preparation fee</span>
+          <span class="m-val" id="fwdPharmPrepFee">$0</span>
+        </div>
+        <div class="metric-row highlight-row">
+          <span class="m-label">Estimated funding remaining after proposed preparation fee</span>
+          <span class="m-val" id="fwdPharmRemaining">$0</span>
+        </div>
+      </div>
+
+      <div class="forecast-col">
+        <h3>Across all pharmacies / year (next 12 months)</h3>
+        <div class="metric-row">
+          <span class="m-label">Additional services that could be delivered</span>
+          <span class="m-val" id="fwdGroupServices">0</span>
+        </div>
+        <div class="metric-row">
+          <span class="m-label">Potential gross program funding</span>
+          <span class="m-val" id="fwdGroupGross">$0</span>
+        </div>
+        <div class="metric-row">
+          <span class="m-label">Proposed Pharmacy Systems 4 Success preparation fee</span>
+          <span class="m-val" id="fwdGroupPrepFee">$0</span>
+        </div>
+        <div class="metric-row highlight-row">
+          <span class="m-label">Estimated funding remaining after proposed preparation fee</span>
+          <span class="m-val" id="fwdGroupRemaining">$0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CSS Visual Bar Chart -->
+    <div class="chart-container">
+      <p class="chart-title">12-Month Group Funding Breakdown (Visual Comparison)</p>
+
+      <div class="bar-group">
+        <div class="bar-header">
+          <span>a. Potential gross program funding</span>
+          <span id="barGrossLabel">$0 (100%)</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill bar-gross" id="barGrossFill" style="width: 100%;"></div>
+        </div>
+      </div>
+
+      <div class="bar-group">
+        <div class="bar-header">
+          <span>b. Proposed preparation fee ($25 Standard / $35 Diabetes per report)</span>
+          <span id="barFeeLabel">$0 (0%)</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill bar-fee" id="barFeeFill" style="width: 35%;"></div>
+        </div>
+      </div>
+
+      <div class="bar-group">
+        <div class="bar-header">
+          <span>c. Estimated gross funding remaining after proposed preparation fee</span>
+          <span id="barRemLabel">$0 (0%)</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill bar-remaining" id="barRemFill" style="width: 65%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="plain-explanation">
+      <strong>Important cost note:</strong> Program figures reflect current Pharmacy Programs Administrator (PPA) payments ($66.53 for an initial MedsCheck and $99.79 for an initial Diabetes MedsCheck). All figures above represent <strong>potential gross program funding</strong> and estimated gross funding remaining after the proposed preparation fee, before each pharmacy’s own pharmacist labour, overheads, tax and other operating costs.
+    </div>
+  </section>
+
+  <!-- 5. How it works section -->
+  <section class="card full-width">
+    <h2>How it works</h2>
+    <div class="steps-grid">
+      <div class="step-box">
+        <span class="step-num">Step 1</span>
+        <p>Pharmacy provides medication-history information using an agreed secure process.</p>
+      </div>
+      <div class="step-box">
+        <span class="step-num">Step 2</span>
+        <p>A pharmacist-reviewed consultation draft is prepared.</p>
+      </div>
+      <div class="step-box">
+        <span class="step-num">Step 3</span>
+        <p>The in-store pharmacist uses the printable report with the patient and finalises clinical decisions.</p>
+      </div>
+      <div class="step-box">
+        <span class="step-num">Step 4</span>
+        <p>The pharmacy manages its own eligibility, consultation, claiming and clinical responsibility.</p>
+      </div>
+    </div>
+    <p class="plain-explanation" style="margin-bottom:0;">
+      This tool is a planning calculator only, not a clinical decision-making or program claiming system.
+    </p>
+  </section>
+
+  <!-- 6. Call-to-action / Book a discussion -->
+  <section class="card cta-card full-width">
+    <div>
+      <h2>Start with a practical pilot · Book a discussion</h2>
+      <p>A small pilot can test workflow, preparation time and practical value before a wider rollout.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn-cta" href="mailto:pharmacysystems4success@gmail.com?subject=Pilot%20Discussion%20-%20Pharmacy%20Systems%204%20Success">Discuss a pilot with Steve</a>
+      <span class="cta-email-sub">pharmacysystems4success@gmail.com</span>
+    </div>
+  </section>
+
+  <!-- 7. Fee/cap schedule table and disclaimer -->
+  <section class="card full-width">
+    <h2>Program fee, cap &amp; preparation fee schedule</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Period / Item</th>
+            <th>Combined Monthly Cap</th>
+            <th>Standard MedsCheck</th>
+            <th>Diabetes MedsCheck</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>July 2016 – June 2019 (Historical program schedule)</td>
+            <td>10 per pharmacy / month</td>
+            <td>$63.81</td>
+            <td>$95.71</td>
+          </tr>
+          <tr>
+            <td>July 2019 onward &amp; Next 12 Months Forecast (PPA schedule)</td>
+            <td>20 per pharmacy / month</td>
+            <td>$66.53</td>
+            <td>$99.79</td>
+          </tr>
+          <tr>
+            <td>Proposed Pharmacy Systems 4 Success preparation fee</td>
+            <td>Per prepared report</td>
+            <td>$25.00</td>
+            <td>$35.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="disclaimer-box">
+      Important: This is an illustrative planning estimate only. It is not financial advice, a guarantee of revenue, or a statement that funding remains claimable. Program payments depend on eligible patients, a completed face-to-face pharmacist service, valid consent and documentation, applicable program rules, and a claim lodged within required timeframes. Figures are gross program funding before pharmacy labour, overheads, tax and other costs. This private planning tool is not endorsed by any pharmacy group or funding body.
+    </div>
+
+    <p class="footer-note">Private planning tool. Not endorsed by any pharmacy group or funding body.</p>
+  </section>
+</main>
+
+<script>
+  (function () {
+    "use strict";
+
+    // Constants & Program Schedules
+    var HIST_EARLY_CAP = 10;
+    var HIST_EARLY_STD_FEE = 63.81;
+    var HIST_EARLY_DIA_FEE = 95.71;
+
+    var CURRENT_CAP = 20;
+    var CURRENT_STD_FEE = 66.53;
+    var CURRENT_DIA_FEE = 99.79;
+
+    var PREP_STD_FEE = 25.00;
+    var PREP_DIA_FEE = 35.00;
+
+    var DEFAULTS = {
+      nPharmacies: 129,
+      curStd: 0,
+      curDia: 5,
+      diaShare: 100,
+      fillRate: 100,
+      startMonth: "2016-07",
+      endMonth: "2025-05"
+    };
+
+    var MONTH_NAMES = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+
+    var audCurrency = new Intl.NumberFormat("en-AU", {
+      style: "currency",
+      currency: "AUD",
+      maximumFractionDigits: 0
+    });
+
+    var numFormat = new Intl.NumberFormat("en-AU", {
+      maximumFractionDigits: 1
+    });
+
+    function el(id) {
+      return document.getElementById(id);
+    }
+
+    function parseYearMonth(ymStr) {
+      if (!ymStr || ymStr.indexOf("-") === -1) return null;
+      var parts = ymStr.split("-");
+      var y = parseInt(parts[0], 10);
+      var m = parseInt(parts[1], 10);
+      if (isNaN(y) || isNaN(m) || m < 1 || m > 12) return null;
+      return { year: y, month: m };
+    }
+
+    function formatMonthYear(ymObj) {
+      return MONTH_NAMES[ymObj.month - 1] + " " + ymObj.year;
+    }
+
+    function clamp(val, min, max) {
+      return Math.min(Math.max(val, min), max);
+    }
+
+    function getNext12MonthsWindowLabel() {
+      var now = new Date();
+      var startY = now.getFullYear();
+      var startM = now.getMonth() + 1; // 1..12
+      var endTotalMonths = (startY * 12 + (startM - 1)) + 11;
+      var endY = Math.floor(endTotalMonths / 12);
+      var endM = (endTotalMonths % 12) + 1;
+      return formatMonthYear({ year: startY, month: startM }) + " to " + formatMonthYear({ year: endY, month: endM });
+    }
+
+    function calculate() {
+      var nPharm = Math.max(1, parseFloat(el("nPharmacies").value) || 0);
+      var curStd = Math.max(0, parseFloat(el("curStd").value) || 0);
+      var curDia = Math.max(0, parseFloat(el("curDia").value) || 0);
+      var diaSharePct = clamp(parseFloat(el("diaShare").value) || 0, 0, 100);
+      var fillRatePct = clamp(parseFloat(el("fillRate").value) || 0, 0, 100);
+
+      var diaShare = diaSharePct / 100;
+      var stdShare = 1 - diaShare;
+      var fillRate = fillRatePct / 100;
+
+      var curTotalMonthly = curStd + curDia;
+
+      // 1. Historical month-by-month calculation
+      var startYM = parseYearMonth(el("startMonth").value) || { year: 2016, month: 7 };
+      var endYM = parseYearMonth(el("endMonth").value) || { year: 2025, month: 5 };
+
+      var startIndex = startYM.year * 12 + (startYM.month - 1);
+      var endIndex = endYM.year * 12 + (endYM.month - 1);
+
+      var histMonthsCount = 0;
+      var histUnclaimedServicesPerPharm = 0;
+      var histGrossPerPharm = 0;
+
+      if (endIndex >= startIndex) {
+        for (var idx = startIndex; idx <= endIndex; idx++) {
+          var y = Math.floor(idx / 12);
+          var m = (idx % 12) + 1;
+          var isEarlyPeriod = (y < 2019) || (y === 2019 && m <= 6);
+
+          var cap = isEarlyPeriod ? HIST_EARLY_CAP : CURRENT_CAP;
+          var stdFee = isEarlyPeriod ? HIST_EARLY_STD_FEE : CURRENT_STD_FEE;
+          var diaFee = isEarlyPeriod ? HIST_EARLY_DIA_FEE : CURRENT_DIA_FEE;
+
+          var monthlyGap = Math.max(0, cap - curTotalMonthly);
+          var weightedFee = (diaShare * diaFee) + (stdShare * stdFee);
+
+          histUnclaimedServicesPerPharm += monthlyGap;
+          histGrossPerPharm += monthlyGap * weightedFee;
+          histMonthsCount++;
+        }
+      }
+
+      var histServicesGroup = histUnclaimedServicesPerPharm * nPharm;
+      var histGrossGroup = histGrossPerPharm * nPharm;
+
+      // Update Historical UI
+      el("histGroupGross").textContent = audCurrency.format(histGrossGroup);
+      if (histMonthsCount > 0) {
+        el("histPeriodLabel").textContent =
+          formatMonthYear(startYM) + " to " + formatMonthYear(endYM) +
+          " (" + histMonthsCount + (histMonthsCount === 1 ? " month" : " months") + ")";
+      } else {
+        el("histPeriodLabel").textContent = "Look-back end date must be on or after look-back start date";
+      }
+
+      el("histServicesPerPharm").textContent = numFormat.format(histUnclaimedServicesPerPharm);
+      el("histServicesGroup").textContent = numFormat.format(histServicesGroup);
+      el("histPharmGross").textContent = audCurrency.format(histGrossPerPharm);
+      el("histGroupGrossRow").textContent = audCurrency.format(histGrossGroup);
+
+      // 2. Next 12 Months Forecast (12 months from current month)
+      el("forecastWindowLabel").textContent = getNext12MonthsWindowLabel();
+
+      var monthlyRemainingCap = Math.max(0, CURRENT_CAP - curTotalMonthly);
+      var monthlyDeliveredExtra = monthlyRemainingCap * fillRate;
+      var annualExtraPerPharm = monthlyDeliveredExtra * 12;
+      var annualExtraGroup = annualExtraPerPharm * nPharm;
+
+      var weightedCurrentProgramFee = (diaShare * CURRENT_DIA_FEE) + (stdShare * CURRENT_STD_FEE);
+      var weightedPrepFee = (diaShare * PREP_DIA_FEE) + (stdShare * PREP_STD_FEE);
+
+      var fwdPharmGross = annualExtraPerPharm * weightedCurrentProgramFee;
+      var fwdPharmPrep = annualExtraPerPharm * weightedPrepFee;
+      var fwdPharmRem = fwdPharmGross - fwdPharmPrep;
+
+      var fwdGroupGross = fwdPharmGross * nPharm;
+      var fwdGroupPrep = fwdPharmPrep * nPharm;
+      var fwdGroupRem = fwdPharmRem * nPharm;
+
+      // Update Next 12 Months Headline & Unlock Summary UI
+      el("fwdGroupGrossHero").textContent = audCurrency.format(fwdGroupGross);
+      el("fwdPharmacyCount").textContent = numFormat.format(nPharm);
+
+      el("unlockPerPharmGross").textContent = audCurrency.format(fwdPharmGross);
+      el("unlockPerPharmFee").textContent = audCurrency.format(fwdPharmPrep);
+      el("unlockPerPharmRem").textContent = audCurrency.format(fwdPharmRem);
+
+      // Update Next 12 Months Detailed Columns
+      el("fwdPharmServices").textContent = numFormat.format(annualExtraPerPharm);
+      el("fwdPharmGross").textContent = audCurrency.format(fwdPharmGross);
+      el("fwdPharmPrepFee").textContent = audCurrency.format(fwdPharmPrep);
+      el("fwdPharmRemaining").textContent = audCurrency.format(fwdPharmRem);
+
+      el("fwdGroupServices").textContent = numFormat.format(annualExtraGroup);
+      el("fwdGroupGross").textContent = audCurrency.format(fwdGroupGross);
+      el("fwdGroupPrepFee").textContent = audCurrency.format(fwdGroupPrep);
+      el("fwdGroupRemaining").textContent = audCurrency.format(fwdGroupRem);
+
+      // Update Bar Chart
+      var feePct = fwdGroupGross > 0 ? (fwdGroupPrep / fwdGroupGross) * 100 : 0;
+      var remPct = fwdGroupGross > 0 ? (fwdGroupRem / fwdGroupGross) * 100 : 0;
+      var grossBarWidth = fwdGroupGross > 0 ? 100 : 0;
+
+      el("barGrossFill").style.width = grossBarWidth.toFixed(1) + "%";
+      el("barFeeFill").style.width = feePct.toFixed(1) + "%";
+      el("barRemFill").style.width = remPct.toFixed(1) + "%";
+
+      el("barGrossLabel").textContent = audCurrency.format(fwdGroupGross) + " (" + grossBarWidth.toFixed(0) + "%)";
+      el("barFeeLabel").textContent = audCurrency.format(fwdGroupPrep) + " (" + feePct.toFixed(1) + "%)";
+      el("barRemLabel").textContent = audCurrency.format(fwdGroupRem) + " (" + remPct.toFixed(1) + "%)";
+    }
+
+    function resetDefaults() {
+      el("nPharmacies").value = DEFAULTS.nPharmacies;
+      el("curStd").value = DEFAULTS.curStd;
+      el("curDia").value = DEFAULTS.curDia;
+      el("diaShare").value = DEFAULTS.diaShare;
+      el("fillRate").value = DEFAULTS.fillRate;
+      el("startMonth").value = DEFAULTS.startMonth;
+      el("endMonth").value = DEFAULTS.endMonth;
+      calculate();
+    }
+
+    var inputs = ["nPharmacies", "curStd", "curDia", "diaShare", "fillRate", "startMonth", "endMonth"];
+    for (var i = 0; i < inputs.length; i++) {
+      el(inputs[i]).addEventListener("input", calculate);
+      el(inputs[i]).addEventListener("change", calculate);
+    }
+
+    el("resetBtn").addEventListener("click", resetDefaults);
+
+    calculate();
+  })();
+</script>
+</body>
+</html>
