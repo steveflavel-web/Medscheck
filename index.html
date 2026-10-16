@@ -60,28 +60,33 @@
       justify-content: center;
     }
 
-    .brand-logo {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center;
-      border: 2px solid var(--blue-200);
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
-      background-color: var(--white);
-      flex: 0 0 52px;
-    }
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  max-width: 52px;
+  max-height: 52px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 2px solid var(--blue-200);
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
 
-    .portrait-img {
-      width: 118px;
-      height: 138px;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: 14px;
-      border: 3px solid rgba(191, 217, 250, 0.65);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-      background-color: var(--royal-700);
-    }
+.portrait-img {
+  width: 118px;
+  height: 138px;
+  max-width: 118px;
+  max-height: 138px;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 14px;
+  border: 3px solid rgba(191, 217, 250, 0.65);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
 
     .header-copy .private-tag {
       display: inline-block;
@@ -636,25 +641,28 @@
 </head>
 
 <body>
-  <header>
-    <div class="header-inner">
-      <div class="brand-logo-wrap">
-        <img class="brand-logo" src="./logo.png" alt="Pharmacy Systems 4 Success logo">
-      </div>
-
-      <div class="header-copy">
-        <span class="private-tag">Private planning tool. Not endorsed by any pharmacy group or funding body.</span>
-        <h1>Unlocking Your Pharmacy Group’s MedsCheck Potential</h1>
-        <p class="subheading">with Pharmacy Systems 4 Success</p>
-        <p class="value-prop">Estimate historical unclaimed MedsCheck and Diabetes MedsCheck program capacity across your network, and model the next 12 months of potential gross program funding with structured pharmacist-reviewed preparation support.</p>
-        <p class="byline">Steve Flavel · Pharmacist &amp; Founder, Pharmacy Systems 4 Success</p>
-      </div>
-
-      <div class="portrait-wrap">
-        <img class="portrait-img" src="./Steve.jpg" alt="Steve Flavel, Pharmacist and Founder of Pharmacy Systems 4 Success">
-      </div>
+<header>
+  <div class="header-inner">
+    <div class="brand-logo-wrap">
+      <img class="brand-logo" src="logo.png" alt="Pharmacy Systems 4 Success logo">
     </div>
-  </header>
+
+    <div class="header-copy">
+      <span class="private-tag">Private planning tool. Not endorsed by any pharmacy group or funding body.</span>
+      <h1>Unlocking Your Pharmacy Group’s MedsCheck Potential</h1>
+      <p class="subheading">with Pharmacy Systems 4 Success</p>
+      <p class="value-prop">
+        Estimate historical unclaimed MedsCheck and Diabetes MedsCheck program capacity across your network,
+        and model the next 12 months of potential gross program funding with structured pharmacist-reviewed preparation support.
+      </p>
+      <p class="byline">Steve Flavel · Pharmacist &amp; Founder, Pharmacy Systems 4 Success</p>
+    </div>
+
+    <div class="portrait-wrap">
+      <img class="portrait-img" src="Steve.jpg" alt="Steve Flavel, Pharmacist and Founder of Pharmacy Systems 4 Success">
+    </div>
+  </div>
+</header>
 
   <main>
     <section class="card how-to-use full-width">
